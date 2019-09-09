@@ -12,7 +12,7 @@ public class AumentoSalario {
 		
 		Scanner leitor = new Scanner(System.in);
 		
-		System.out.println("Informe o valor do seu sal√°rio inicial: ");
+		System.out.println("Informe o valor do seu sal·rio inicial: ");
 		salarioAtual = leitor.nextInt();
 		
 		System.out.println("Informe a porcentagem de aumento:");

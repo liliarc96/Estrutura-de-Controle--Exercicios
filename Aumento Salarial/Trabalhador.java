@@ -20,6 +20,6 @@ public class Trabalhador {
 		float aumento = (float) ((salario * salarioAumento)/100.0);
 		float novoSalario = (salario + aumento);
 		System.out.println("Teve um aumento de " + aumento + ".\n");
-		System.out.println("Valor do novo sal√°rio √© igual √†: " + novoSalario + ".");
+		System.out.println("Valor do novo sal·rio È igual ‡: R$ " + novoSalario + ".");
 	}
 }
