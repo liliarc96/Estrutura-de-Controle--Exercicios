@@ -25,8 +25,8 @@
 - Resposta [aqui](https://github.com/liliarc96/Estrutura-de-Controle--Exercicios/tree/master/Presta%C3%A7%C3%A3o/com/prestacao)
 
 **7.** Faça um programa que receba duas notas de seis alunos, calcule e mostre:
-  -	A média aritmética das duas notas de cada aluno;
-  -	A mensagem que está na tabela a seguir:
+- [x] A média aritmética das duas notas de cada aluno;
+- [x] A mensagem que está na tabela a seguir:
   
 **Média Aritmética Mensagem**
 
@@ -61,4 +61,4 @@ Exiba um relatório contendo:
 - [x] O nome do paciente mais velho.
 - [x] O nome da mulher mais baixa.   
       
-  * Resposta [aqui]()
+- Resposta [aqui]()
