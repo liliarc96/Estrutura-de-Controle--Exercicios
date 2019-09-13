@@ -44,8 +44,8 @@
 
 **8.**  Uma pousada estipulou o preço da diária em R$ 40,00 e mais uma taxa de serviços diários de:
 
-  - R$ 15,00, se o número de dias for menor que 10;
-  - R$ 8,00, se o número de dias for maior ou igual a 10.
+- [x] R$ 15,00, se o número de dias for menor que 10;
+- [x] R$ 8,00, se o número de dias for maior ou igual a 10.
   
 Criar um programa em Java que informe o nome, o valor da conta de cada cliente eao final o total arrecadado pela pousada.
 - Resposta [aqui](https://github.com/liliarc96/Estrutura-de-Controle--Exercicios/tree/master/Pousada/com/pousada) 
@@ -54,11 +54,11 @@ Criar um programa em Java que informe o nome, o valor da conta de cada cliente e
 
 Exiba um relatório contendo:
 
-  - A quantidade de pacientes.
-  - A média de idade dos homens.
-  -	A quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70kg.
-  -	A quantidade de pessoas com idade entre 18 e 25.
-  -	O nome do paciente mais velho.
-  -	O nome da mulher mais baixa.   
+- [x] A quantidade de pacientes.
+- [x] A média de idade dos homens.
+- [x] A quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70kg.
+- [x] A quantidade de pessoas com idade entre 18 e 25.
+- [x] O nome do paciente mais velho.
+- [x] O nome da mulher mais baixa.   
       
   * Resposta [aqui]()
