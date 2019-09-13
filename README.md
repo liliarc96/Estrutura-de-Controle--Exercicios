@@ -36,10 +36,10 @@
 |     De 3,0 a 7,0     |     Exame     |
 |     Acima de 7,0     |     Aprovado     |
 
-- [ ] Total de alunos reprovados;
-- [ ] O total de alunos de exame;
-- [ ] Total de alunos reprovados;
-- [ ] A média da classe.    
+- [x] Total de alunos reprovados;
+- [x] O total de alunos de exame;
+- [x] Total de alunos reprovados;
+- [x] A média da classe.   
 - Resposta [aqui](https://github.com/liliarc96/Estrutura-de-Controle--Exercicios/tree/master/Media%20Aritim%C3%A9tica/com/mediaaritimetica)
 
 **8.**  Uma pousada estipulou o preço da diária em R$ 40,00 e mais uma taxa de serviços diários de:
