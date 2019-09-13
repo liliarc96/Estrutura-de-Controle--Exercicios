@@ -28,11 +28,7 @@
   -	A média aritmética das duas notas de cada aluno;
   -	A mensagem que está na tabela a seguir:
   
-<p align="center">
-  <b>
-    Média Aritmética Mensagem
-  </b>
-</p>
+**Média Aritmética Mensagem**
 
 |     Média Aritimética     |     Mensagem     |
 |------------------|---------------------|
@@ -40,10 +36,10 @@
 |     De 3,0 a 7,0     |     Exame     |
 |     Acima de 7,0     |     Aprovado     |
 
-  - Total de alunos reprovados;
-  - O total de alunos de exame;
-  - Total de alunos reprovados;
-  - A média da classe.    
+- [ ] Total de alunos reprovados;
+- [ ] O total de alunos de exame;
+- [ ] Total de alunos reprovados;
+- [ ] A média da classe.    
 - Resposta [aqui](https://github.com/liliarc96/Estrutura-de-Controle--Exercicios/tree/master/Media%20Aritim%C3%A9tica/com/mediaaritimetica)
 
 **8.**  Uma pousada estipulou o preço da diária em R$ 40,00 e mais uma taxa de serviços diários de:
@@ -65,4 +61,4 @@ Exiba um relatório contendo:
   -	O nome do paciente mais velho.
   -	O nome da mulher mais baixa.   
       
-  - Resposta [aqui]()
+  * Resposta [aqui]()
