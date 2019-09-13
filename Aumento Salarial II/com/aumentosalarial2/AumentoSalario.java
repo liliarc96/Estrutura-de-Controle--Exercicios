@@ -7,51 +7,30 @@ public class AumentoSalario {
 
 		Trabalhador trabalhador1 = new Trabalhador();
 		
-		float salarioAtual;
-		String nomeTrabalhador = null;
-		int onOff = 1;
+		boolean onOff = true;
 		
 		Scanner leitor = new Scanner(System.in);
 		
-		while(onOff == 1) {
+		
+		while(onOff) {
 			System.out.println("Digite um nome para continuar, 'fim' para sair: ");
-			nomeTrabalhador = leitor.nextLine();
+			trabalhador1.nome =leitor.nextLine();
 				
-			if(nomeTrabalhador != "fim"){
-				System.out.println(nomeTrabalhador + ", informe o valor do seu salário inicial: ");
-				salarioAtual = leitor.nextInt();
+			if(trabalhador1.nome != "fim"){
+				System.out.println(trabalhador1.nome + ", informe o valor do seu sal�rio inicial: ");
+				trabalhador1.setSalario(leitor.nextInt());
 				
-				if(salarioAtual <= 500) {
-					trabalhador1.calculaNovoSalario(salarioAtual, nomeTrabalhador);
+				if(trabalhador1.salario <= 500) {
+					trabalhador1.calculaNovoSalario();
 				}
 				else {
-					System.out.println(nomeTrabalhador + " não tem direito ao aumento de 20%.");
+					System.out.println(trabalhador1.nome + " n�o tem direito ao aumento de 20%.");
 				}
 			}else {
-				onOff = 0;
+				onOff = false;
 				System.out.println("Saindo...");
 			}
 		}
-		
-		
-		/*for(;onOff == 1;) {
-			System.out.println("Digite um nome para continuar, 'fim' para sair: ");
-			nomeTrabalhador = leitor.nextLine();
-			
-			if(nomeTrabalhador != "fim"){
-				System.out.println(nomeTrabalhador + ", informe o valor do seu salário inicial: ");
-				salarioAtual = leitor.nextInt();
-					
-				if(salarioAtual <= 500) {
-					trabalhador1.calculaNovoSalario(salarioAtual, nomeTrabalhador);			
-				}else {
-					System.out.println(nomeTrabalhador + " não tem direito ao aumento de 20%.");
-				}
-			}else {
-				onOff = 0;
-				System.out.println("Saindo...");
-			}
-		}*/
 	}
 	
 }

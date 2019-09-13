@@ -1,13 +1,13 @@
 package com.aumentosalarial2;
 
 public class Trabalhador {
-	private float salario;
-	private String nome;
+	public double salario;
+	public String nome;
 	
-	public float getSalario() {
+	public double getSalario() {
 		return salario;
 	}
-	public void setSalario(float salario) {
+	public void setSalario(double salario) {
 		this.salario = salario;
 	}
 	public String getNome() {
@@ -17,9 +17,9 @@ public class Trabalhador {
 		this.nome = nome;
 	}
 	
-	public void calculaNovoSalario(float salario, String nome) {
-		float aumento = (float) ((salario * 20.0)/100.0);
-		float novoSalario = (salario + aumento);
-		System.out.println(nome + " tem o valor do novo salário igual à R$ " + novoSalario + ".");
+	public void calculaNovoSalario() {
+		double aumento = ((this.salario * 20.0)/100.0);
+		double novoSalario = (this.salario + aumento);
+		System.out.println(this.nome + " tem o valor do novo salário igual à R$ " + novoSalario + ".");
 	}
 }

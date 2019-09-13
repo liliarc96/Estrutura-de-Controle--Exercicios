@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class PostoGasolina {
 	
-	public static float calculoDespesa(float maxCombustivel, float tanque) {
-		float refri = 3;
-		float litros = (float) ((maxCombustivel - tanque) * 2.50);
+	public static double calculoDespesa(double maxCombustivel, double tanque) {
+		double refri = 3;
+		double litros = ((maxCombustivel - tanque) * 2.50);
 		
-		float despesaFinal = (float) (litros + (2 * refri));
+		double despesaFinal = (litros + (2 * refri));
 		
 		System.out.println("\n\n" + (maxCombustivel - tanque) + " L de gasolina - " + "R$ " + litros + "\n");
 		System.out.println( "2 uni. Refrigerante(s) - " + "R$ " + (2 * refri) + "\n");

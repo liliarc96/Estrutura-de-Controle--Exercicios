@@ -1,7 +1,7 @@
 package com.parouimpar;
 
 public class Numeros {
-	private int numero;
+	public int numero;
 
 	public int getNumero() {
 		return numero;
@@ -11,8 +11,8 @@ public class Numeros {
 		this.numero = numero;
 	}
 	
-	public void parOuImpar(int numero) {
-		if(numero%2 == 0) {
+	public void parOuImpar() {
+		if(this.numero%2 == 0) {
 			System.out.println("O número " + "é par.\n");
 		}else {
 			System.out.println("O número " + "é ímpar.\n");

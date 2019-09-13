@@ -7,19 +7,16 @@ public class AumentoSalario {
 
 		Trabalhador trabalhador1 = new Trabalhador();
 		
-		float salarioAtual;
-		float porcentagem;
-		
 		
 		Scanner leitor = new Scanner(System.in);
 		
 		System.out.println("Informe o valor do seu salário inicial: ");
-		salarioAtual = leitor.nextInt();
+		trabalhador1.salario = leitor.nextInt();
 		
 		System.out.println("Informe a porcentagem de aumento:");
-		porcentagem = leitor.nextInt();
+		trabalhador1.salarioAumento = leitor.nextInt();
 		
-		trabalhador1.calculaNovoSalario(salarioAtual, porcentagem);
+		trabalhador1.calculaNovoSalario();
 	}
 
 }

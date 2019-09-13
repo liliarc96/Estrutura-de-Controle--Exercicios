@@ -7,15 +7,12 @@ public class ResultadoProva {
 	public static void main(String[] args) {
 		Aluno aluno1 = new Aluno();
 		
-		float notaA = 0;
-		float notaB = 0;
-		
 		int aprovados = 0;
 		int reprovados = 0;
 		int exame = 0;
-		float somaTotal = 0;
+		double somaTotal = 0;
 		
-		float media;
+		double media;
 		int contador;
 		
 		Scanner leitor = new Scanner(System.in);
@@ -23,12 +20,12 @@ public class ResultadoProva {
 		for(contador = 1;contador <= 6;contador++) {
 			System.out.println("\nAluno "+contador+"°:\n");
 			System.out.println("Digite sua primeira nota: ");
-			notaA = leitor.nextFloat();
+			aluno1.nota1 = leitor.nextFloat();
 			
 			System.out.println("Digite sua segunda nota: ");
-			notaB = leitor.nextFloat();
+			aluno1.nota2 = leitor.nextFloat();
 			
-			media = aluno1.mediaAritimetica(notaA, notaB);
+			media = aluno1.mediaAritimetica();
 			
 			if(media > 7.0) {
 				System.out.println("Média = "+ media +"\nAprovado");
