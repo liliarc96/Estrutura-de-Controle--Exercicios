@@ -61,4 +61,4 @@ Exiba um relatório contendo:
 - [x] O nome do paciente mais velho.
 - [x] O nome da mulher mais baixa.   
       
-- Resposta [aqui]()
+- Resposta [aqui](https://github.com/liliarc96/Estrutura-de-Controle--Exercicios/tree/master/Cl%C3%ADnica/com/clinica)
