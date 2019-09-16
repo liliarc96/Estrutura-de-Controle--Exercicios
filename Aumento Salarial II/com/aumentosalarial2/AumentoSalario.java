@@ -18,19 +18,18 @@ public class AumentoSalario {
 			System.out.println("\nDigite um nome para continuar, 'fim' para sair: ");
 			listaFuncionarios.add(leitor.nextLine());
 			
-			System.out.println(listaFuncionarios);
 			if(listaFuncionarios.contains("fim")){
 				listaFuncionarios.remove("fim");
 				System.out.println("Saindo...");
 				onOff = false;
 			}else {
-				System.out.println("\nInforme o valor do seu sal·rio inicial: ");
+				System.out.println("\nInforme o valor do seu sal√°rio inicial: ");
 				trabalhador1.salario = leitor.nextDouble();
 				leitor.nextLine();
 				if(trabalhador1.salario <= 500) {
 					trabalhador1.calculaNovoSalario();
 				}else {
-					System.out.println("\nVocÍ n„o tem direito ao aumento de sal·rio!");
+					System.out.println("\nVoc√™ n√£o tem direito ao aumento de sal√°rio!");
 				}
 			}
 		}
