@@ -1,10 +1,10 @@
 package com.pousada;
 
 public class Cliente {
-	private String nomeCliente;
-	private float precoDiaria;
-	private float taxaDiaria;
-	private int tempoEstada;
+	public String nomeCliente;
+	public float precoDiaria;
+	public float taxaDiaria;
+	public int tempoEstada;
 	
 	public String getNomeCliente() {
 		return nomeCliente;
