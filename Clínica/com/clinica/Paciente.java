@@ -1,11 +1,18 @@
 package com.clinica;
 
 public class Paciente {
-	private String nomePaciente;
-	private String sexoPaciente;
-	private float pesoPaciente;
-	private float alturaPaciente;
+	public String nomePaciente;
+	public String sexoPaciente;
+	public double pesoPaciente;
+	public double alturaPaciente;
+	public int idadePaciente;
 	
+	public int getIdadePaciente() {
+		return idadePaciente;
+	}
+	public void setIdadePaciente(int idadePaciente) {
+		this.idadePaciente = idadePaciente;
+	}
 	public String getNomePaciente() {
 		return nomePaciente;
 	}
@@ -18,16 +25,16 @@ public class Paciente {
 	public void setSexoPaciente(String sexoPaciente) {
 		this.sexoPaciente = sexoPaciente;
 	}
-	public float getPesoPaciente() {
+	public double getPesoPaciente() {
 		return pesoPaciente;
 	}
-	public void setPesoPaciente(float pesoPaciente) {
+	public void setPesoPaciente(double pesoPaciente) {
 		this.pesoPaciente = pesoPaciente;
 	}
-	public float getAlturaPaciente() {
+	public double getAlturaPaciente() {
 		return alturaPaciente;
 	}
-	public void setAlturaPaciente(float alturaPaciente) {
+	public void setAlturaPaciente(double alturaPaciente) {
 		this.alturaPaciente = alturaPaciente;
 	}
 
