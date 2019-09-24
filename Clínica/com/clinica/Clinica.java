@@ -16,6 +16,7 @@ public class Clinica {
 		double idadeMediaH = 0.0;
 		int mulheresContagem = 0;
 		int maisVelho = 0;
+		int indexPessoaMaisVelha = 0;
 		int mulherVelha = 0;
 		int indexMulherVelha = 0;
 		int maioridade = 0;
@@ -45,6 +46,7 @@ public class Clinica {
 				
 				if(paciente.idadePaciente <= maisVelho) {
 					maisVelho = paciente.idadePaciente;
+					indexPessoaMaisVelha = index;
 					if((paciente.sexoPaciente == "M") && (paciente.idadePaciente <= mulherVelha)) {
 						mulherVelha = paciente.idadePaciente;
 						indexMulherVelha = index;
@@ -73,10 +75,10 @@ public class Clinica {
 		System.out.println("\n---------- RELATÓRIO ----------\n\n");
 		System.out.println("Quantidade total de pacientes: " + (index + 1) + "\n");
 		System.out.println("Média de idade dos homens: " + (idadeMediaH/indexH) + "\n");
-		System.out.println("Quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70 kg: " + mulheresContagem + "\n");
+		System.out.println("Quantidade de mulheres com altura entre 1,60 m e 1,70 m e peso acima de 70 kg: " + mulheresContagem + "\n");
 		System.out.println("Quantidade de pessoas com idade entre 18 e 25: " + maioridade + "\n");
-		System.out.println("Paciente mais velho: " + maisVelho + "\n");
-		System.out.println("Mulher mais velha: " + (listaPaciente.get(indexMulherVelha)) + "\n");
+		System.out.println("Paciente mais velho(a): " + (listaPacientes.get(indexPessoaMaisVelha)) + "\n");
+		System.out.println("Mulher mais velha: " + (listaPacientes.get(indexMulherVelha)) + "\n");
 	}
 
 }
