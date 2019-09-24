@@ -10,13 +10,14 @@ public class Clinica {
 		Paciente paciente = new Paciente();
 		Scanner leitor = new Scanner(System.in);
 		
-		int index = 0; //Índice da lista de pacientes, no final (index + 1) = total de pacientes
-		int indexH = 0; //Número de homens, no final (indexH + 1) = total de homens
+		int index = 0; //Ãndice da lista de pacientes, no final (index + 1) = total de pacientes
+		int indexH = 0; //NÃºmero de homens, no final (indexH + 1) = total de homens
 		
 		double idadeMediaH = 0.0;
 		int mulheresContagem = 0;
 		int maisVelho = 0;
 		int mulherVelha = 0;
+		int indexMulherVelha = 0;
 		int maioridade = 0;
 		
 		List<String> listaPacientes = new ArrayList<>();
@@ -29,7 +30,7 @@ public class Clinica {
 				listaPacientes.remove("fim");
 				break;
 			}else {
-				System.out.println("Digite o seu gênero (H | M): ");
+				System.out.println("Digite o seu gÃªnero (H | M): ");
 				paciente.sexoPaciente = leitor.nextLine();
 				
 				if(paciente.sexoPaciente == "H") {
@@ -46,6 +47,7 @@ public class Clinica {
 					maisVelho = paciente.idadePaciente;
 					if((paciente.sexoPaciente == "M") && (paciente.idadePaciente <= mulherVelha)) {
 						mulherVelha = paciente.idadePaciente;
+						indexMulherVelha = index;
 					}
 				}
 		
@@ -68,13 +70,13 @@ public class Clinica {
 				index++;
 			}
 		}
-		System.out.println("\n---------- RELATÓRIO ----------\n\n");
+		System.out.println("\n---------- RELATÃ“RIO ----------\n\n");
 		System.out.println("Quantidade total de pacientes: " + (index + 1) + "\n");
-		System.out.println("Média de idade dos homens: " + (idadeMediaH/indexH) + "\n");
+		System.out.println("MÃ©dia de idade dos homens: " + (idadeMediaH/indexH) + "\n");
 		System.out.println("Quantidade de mulheres com altura entre 1,60 e 1,70 e peso acima de 70 kg: " + mulheresContagem + "\n");
 		System.out.println("Quantidade de pessoas com idade entre 18 e 25: " + maioridade + "\n");
 		System.out.println("Paciente mais velho: " + maisVelho + "\n");
-		System.out.println("Mulher mais velha: " + mulherVelha + "\n");
+		System.out.println("Mulher mais velha: " + (listaPaciente.get(indexMulherVelha)) + "\n");
 	}
 
 }
